@@ -28,10 +28,11 @@ public function onCommand(CommandSender $sender, Command $command, $label, array
                     $player = $sender->getServer()->getPlayer($name);
                 if(!(isset($args[0]))){
                     $sender->sendMessage(TextFormat::GREEN."Usage: /report <Player> <Reason>");
+		      }
                     return true;
-                     if(count($args) < 1){                   
-				foreach($this->getServer()->getOnlinePlayers() as $p){
-					if($p->isOnline() && $p->hasPermission("report.report.view")){
-						if($player instanceof Player){
-              $p->sendMessage(TextFormat::DARK_RED."[Report] ".TextFormat::RED."Player ".$sender->getName()." reported ".TextFormat::AQUA.$player->getDisplayName().TextFormat::RED." for ".TextFormat::DARK_RED.implode("", $args));
+         #            if(count($args) < 1){                   
+		#		foreach($this->getServer()->getOnlinePlayers() as $p){
+		#			if($p->isOnline() && $p->hasPermission("report.report.view")){
+		#				if($player instanceof Player){
+       #       $p->sendMessage(TextFormat::DARK_RED."[Report] ".TextFormat::RED."Player ".$sender->getName()." reported ".TextFormat::AQUA.$player->getDisplayName().TextFormat::RED." for ".TextFormat::DARK_RED.implode("", $args));
 			
