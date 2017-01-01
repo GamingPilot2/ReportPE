@@ -2,7 +2,7 @@
 
 namespace ReportPE;
 
-use pocketmine\command\Command;useus
+use pocketmine\command\Command;
 use 
 use
 use
@@ -23,7 +23,7 @@ $this->ConsoleSender->sendMessage("ReportPE are now disabled !");
 public function onCommand(CommandSender $sender, Command $command, $label, array $args){
         switch($command->getName()){
             
-          case "report"		              
+          case "report":	              
             $name = \strtolower(\array_shift($args));
                     $player = $sender->getServer()->getPlayer($name);
                 if(!(isset($args[0]))){
