@@ -1,0 +1,6 @@
+name: ReportPE
+api: 2.0.0
+author: GannicusCoC_YT
+commands:
+- /report
+ description: "Report a player to an admin"
